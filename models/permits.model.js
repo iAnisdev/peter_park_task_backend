@@ -16,7 +16,8 @@ module.exports = (sequelize, Sequelize) => {
         type: Sequelize.STRING
       },
       status: {
-        type: Sequelize.BOOLEAN
+        type: Sequelize.BOOLEAN,
+        defaultValue: true
       }
     });
     return Permit;
